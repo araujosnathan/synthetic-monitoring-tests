@@ -1,0 +1,26 @@
+{
+  "name": "synthetic-monitoring-tests",
+  "author": "Nathan Araujo",
+  "version": "1.0.0",
+  "main": "dist/{index.js,functions/*.js}",
+  "scripts": {
+    "build": "tsc",
+    "start": "func start --typescript",
+    "watch": "tsc --watch",
+    "dev": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.7.3-beta.0",
+    "@azure/storage-blob": "^12.27.0",
+    "applicationinsights": "^3.7.0",
+    "archiver": "^7.0.1",
+    "dotenv": "^17.0.1",
+    "playwright": "^1.53.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^20.4.2",
+    "typescript": "^5.3.3"
+  }
+}

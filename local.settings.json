@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "SYNTHETIC_MONITOR_SCHEDULE": "0 */10 * * * *",
+    "username": "username",
+    "password": "password",
+    "baseUrl": "",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "",
+    "AZURE_BLOB_CONNECTION_STRING": "",
+    "AZURE_BLOB_CONTAINER_NAME": "synthetic-monitoring-tests"
+  },
+  "Logging": {
+    "ApplicationInsights": {
+      "SamplingSettings": {
+        "IsEnabled": false
+      }
+    }
+  }
+}
