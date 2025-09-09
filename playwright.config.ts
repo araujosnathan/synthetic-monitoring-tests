@@ -28,6 +28,7 @@ export default defineConfig({
     baseURL: process.env.baseUrl,
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
+    actionTimeout: 30000
   },
 
   reporter: [
@@ -38,9 +39,9 @@ export default defineConfig({
   ],
 
   projects: [
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+     {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    }
   ],
 });
